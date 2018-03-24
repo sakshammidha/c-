@@ -4,7 +4,7 @@ using namespace std;
 
 class Train
 {
-    int train number;
+    int trainnumber;
     char destination[20];
     float distance;
     float fuel;
@@ -20,32 +20,41 @@ void Train::calfuel()
 {
 
 
-    if(dsistance<=1500)
-    fuel=250;
-    else if(distance>1500)&&(distance<=3000)
-    fuel=1000;
-    else
-    fuel=2500;
+    if(distance<=1500)
+    {
+    cout<<"fuel required is:"<<250<<endl;
 }
+    else if
+        ((distance>1500)&&(distance<=3000))
+    {
+    cout<<"fuel required is:"<<1000<<endl;
+}
+    else
+    cout<<"fuel  required is:"<<1500<<endl;
+}
+
 
 void Train::read()
 {
-    cout<<"enter details"<<endl;
-    cin>>train number;
+    cout<<"enter details:"<<endl;
+    cout<<"enter train number:"<<endl;
+    cin>>trainnumber;
     cin.ignore();
+    cout<<"enter destination:"<<endl;
     cin.getline(destination,20);
+    cout<<"enter distance:"<<endl;
     cin>>distance;
-    calfuel()
+    calfuel();
 
 }
 
 void Train::display()
 {
     cout<<"the details are:"<<endl;
-    cout<<"train number"<<endl;
-    cout<<"destination"<<endl;
-    cout<<"distance"<<endl;
-    cout<<"fuel"<<endl;
+    cout<<"train number is:"<<trainnumber<<endl;
+    cout<<"destination is:"<<destination<<endl;
+    cout<<"distance to be travelled is:"<<distance<<endl;
+    calfuel();
 
 }
 
