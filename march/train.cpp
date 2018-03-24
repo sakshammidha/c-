@@ -22,15 +22,15 @@ void Train::calfuel()
 
     if(distance<=1500)
     {
-    cout<<"fuel required is:"<<250<<endl;
+cout<<"fuel required is:"<<250<<endl;
 }
     else if
         ((distance>1500)&&(distance<=3000))
     {
-    cout<<"fuel required is:"<<1000<<endl;
+cout<<"fuel required is:"<<1000<<endl;
 }
     else
-    cout<<"fuel  required is:"<<1500<<endl;
+cout<<"fuel  required is:"<<1500<<endl;
 }
 
 
