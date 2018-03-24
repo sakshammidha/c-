@@ -9,7 +9,7 @@ class Train
     float distance;
     float fuel;
     void calfuel();
-    
+
 public:
     void read();
     void display();
@@ -18,6 +18,8 @@ public:
 
 void Train::calfuel()
 {
+
+
     if(dsistance<=1500)
     fuel=250;
     else if(distance>1500)&&(distance<=3000)
@@ -30,6 +32,7 @@ void Train::read()
 {
     cout<<"enter details"<<endl;
     cin>>train number;
+    cin.ignore();
     cin.getline(destination,20);
     cin>>distance;
     calfuel()
@@ -46,7 +49,7 @@ void Train::display()
 
 }
 
-void main()
+int main()
 {
     Train t;
     t.read();
