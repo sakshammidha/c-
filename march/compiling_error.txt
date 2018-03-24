@@ -1,0 +1,24 @@
+D:\c++\march\train.cpp:7:9: error: expected ';' at end of member declaration
+     int train number;
+         ^
+D:\c++\march\train.cpp:7:15: error: 'number' does not name a type
+     int train number;
+               ^
+D:\c++\march\train.cpp: In member function 'void Train::calfuel()':
+D:\c++\march\train.cpp:20:8: error: 'dsistance' was not declared in this scope
+     if(dsistance<=1500)
+        ^
+D:\c++\march\train.cpp:22:29: error: expected identifier before '(' token
+     else if(distance>1500)&&(distance<=3000)
+                             ^
+D:\c++\march\train.cpp: In member function 'void Train::read()':
+D:\c++\march\train.cpp:31:16: error: expected ';' before 'number'
+     cin>>train number;
+                ^
+D:\c++\march\train.cpp:36:1: error: expected ';' before '}' token
+ }
+ ^
+D:\c++\march\train.cpp: At global scope:
+D:\c++\march\train.cpp:48:11: error: '::main' must return 'int'
+ void main()
+           ^

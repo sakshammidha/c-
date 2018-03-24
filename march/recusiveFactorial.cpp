@@ -5,7 +5,7 @@ using namespace std;
 long factorial(int n)
 {
     if(n == 1)
-        return 1;   
+        return 1;
 
     return n * factorial(n - 1);
 
@@ -13,6 +13,6 @@ long factorial(int n)
 
 int main()
 {
-    cout << factorial(5) << endl;
+    cout << factorial(3) << endl;
     return 0;
 }
