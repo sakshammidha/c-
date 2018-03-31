@@ -41,7 +41,7 @@ void Book::input()
 void Book::purchase()
 {
 
-    int y;
+    nt y;
     float g;
     cout<<"enter the no of copies"<<endl;
     cin>>y;
