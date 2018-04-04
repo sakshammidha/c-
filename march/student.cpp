@@ -65,7 +65,9 @@ void student::get_data()
 {
 
     cout<<"enter details :\n";
+    cout<<"enter roll no:";
 cin>>rollno;
+cout<<"enter name:";
 cin.ignore();
 cin.getline(name,20);
 cout<<"enter marks of 5 subjects\n";
@@ -78,15 +80,14 @@ cin>>marks[i];
 void student::show_data()
 {
 
-    cout<<"enter all details\n ";
-    cout<<rollno<<endl;
-    cout<<name<<endl;
-    cout<<"enter marks of 5 subjects\n";
+    cout<<" all details are:"<<endl;
+    cout<<"roll no of student is:"<<rollno<<endl;
+    cout<<"name of student is:"<<name<<endl;
     for(int i=0;i<5;i++)
     {
-    cout<<marks[i]<<endl;
+    cout<<"marks in 5 subjects is:"<<marks[i]<<endl;
     }
-    cout<<grade()<<endl;
+    cout<<"grade he got is"<<grade()<<endl;
 }
 
 int main()
