@@ -13,21 +13,21 @@ private:
   //public:
 public:
   //constructors
-  //default constructors
+  //default constructor
   Complex()
   {
     real = 10;
     imaginary = 40;
   }
 
-  //parameterised constructors
+  //parameterised constructor
   Complex(int r, int i)
   {
     real = r;
     imaginary = i;
   }
 
-  //copy constructors
+  //copy constructor
   Complex(Complex &s)
   {
     real = s.imaginary;

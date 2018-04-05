@@ -31,10 +31,14 @@ void RESORT::Getinfo()
 {
 
     cout<<"enter details:"<<endl;
+    cout<<"enter room no:";
     cin>>Rno;
+    cout<<"enter name:";
     cin.ignore();
     cin.getline(name,20);
+    cout<<"enter charges:";
     cin>>charges;
+    cout<<"enter days:";
     cin>>days;
 }
 
@@ -42,11 +46,15 @@ void RESORT::Dispinfo()
 {
 
     cout<<"details are:"<<endl;
+    cout<<"room no is:";
     cout<<Rno<<endl;
+    cout<<"name is:";
     cout<<name<<endl;
+    cout<<"charges are:";
     cout<<charges<<endl;
+    cout<<"days are:";
     cout<<days<<endl;
-    cout<<COMPUTE()<<endl;
+    cout<<"Amount is:"<<COMPUTE()<<endl;
 
 }
 
@@ -92,7 +100,9 @@ days=resort.days;
 int main()
 
 {
-    RESORT r;
+    RESORT r,s;
     r.Getinfo();
     r.Dispinfo();
+    s.Dispinfo();
+
 }
