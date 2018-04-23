@@ -59,6 +59,10 @@ class Derived
 
 int main()
 {
+Base b;
+Derived d;
+
+b.get();
 
 
 
