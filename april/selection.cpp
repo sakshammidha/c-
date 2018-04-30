@@ -42,7 +42,7 @@ void printArray(int *a, int size)
 int main()
 {
 
-    int a[] = {5, 0, 7, 9, 8, 2, 3, 1};
+    int a[] = {5, 0, 7, 9, 8, 2, 4, 1};
 
     cout << "Median of the data is : " << median(a, 8) << endl;
 
@@ -52,4 +52,13 @@ int main()
 float median(int * array, int size)
 {
     //your code
+    selectionSort(array,size);
+    if(size%2==0)
+    {
+        size--;
+        return (array[size/2]+array[(size/2)+1]) / 2.0;
+    }
+    else
+    return (float)(array[(size)/2]);
+
 }
