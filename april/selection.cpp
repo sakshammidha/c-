@@ -3,7 +3,9 @@
 using namespace std;
 
 void selectionSort(int *, int);
+
 void printArray(int *, int);
+
 //calculate the median
 float median(int *, int);
 

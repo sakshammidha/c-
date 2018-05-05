@@ -23,6 +23,6 @@ int BinarySearch(int *a,int n,int e)
 int main()
 {
     int b[] = {1,4,5,6,7,8,9,32,123,784};
-    cout<<BinarySearch(b, 10, 56)<<endl;
+    cout<<BinarySearch(b, 10,784)<<endl;
     return 0;
 }
