@@ -77,14 +77,14 @@ cout<<"average:"<<average<<endl;
 
 }
 
-void Gradstudent::insert()
+void Gradstudent::enter()
 {
 
 cin.ignore();
 cout<<"enter details:"<<endl;
-cout<<"enter subject:";
+cout<<"enter subject:"<<endl;
 cin.getline(subject,20);
-cout<<"enter working status:";
+cout<<"enter working status:"<<endl;
 cin>>working;
 
 }
@@ -102,7 +102,17 @@ void Gradstudent::displayDetails()
 int main()
 {
 
+    Student s;
+    s.insert();
+    s.display();
 
+    Person p;
+    p.get();
+    p.show();
+
+    Gradstudent g;
+    g.enter();
+    g.displayDetails();
 
     return 0;
 
