@@ -35,7 +35,7 @@ int insert_before(int *array,int size,int given,int ele)
     {
         if(array[i]==given)
         {
-            pos=i-1;
+            pos=i;
             break;
         }
     }
@@ -45,10 +45,10 @@ int insert_before(int *array,int size,int given,int ele)
 
 int main()
 {
-    int a[100]={12,3,45,6,78,25,76};
-    int size=7;
+    int a[100]={0,0,0,12,3,45,6,78,25,76};
+    int size=10;
     print_array(a,size);
-    size=insert_before(a,size,78,32);
+    size=insert_before(a,size,45,32);
     print_array(a,size);
 
     return 0;
