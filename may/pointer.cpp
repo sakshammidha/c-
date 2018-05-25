@@ -9,6 +9,6 @@ int main()
     b=&a;
     cout<<a<<endl;
     cout<<b<<endl;
-    
+
     return 0;
 }
